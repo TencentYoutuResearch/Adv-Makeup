@@ -11,9 +11,7 @@ import torch
 import torchvision
 import torch.nn as nn
 import torch.nn.functional as F
-from encoder import *
-from decoder import *
-from discriminator import *
+from networks import *
 from utils import *
 import Pretrained_FR_Models.irse as irse
 import Pretrained_FR_Models.facenet as facenet
