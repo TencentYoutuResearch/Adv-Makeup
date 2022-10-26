@@ -169,7 +169,7 @@ class MakeupAttack(nn.Module):
         fake_afters = []
         before_pasted_eyes  = []
         for i, before_name in enumerate(before_path):
-            img = read_img_from_path(self.data_dir, before_name, self.mean, self.mean, self.device)
+            img = read_img_from_path(self.data_dir, before_name, self.mean, self.std, self.device)
 
             lmks = self.api_landmarks[before_name].astype(int)
 
